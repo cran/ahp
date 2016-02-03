@@ -30,7 +30,8 @@ AnalyzeTable <- function(ahpTree,
                      pruneFun = pruneFun)
   df <- df[ , -1]
   
-  alternatives <- names(df)[-c(1:3, ncol(df))]
+  #alternatives <- names(df)[-c(1:3, ncol(df))]
+  alternatives <- GetAlternativesNames(ahpTree)
   dfw <- df[ , alternatives, drop = FALSE]
   
   dfw[is.na(dfw)] <- 1
@@ -54,7 +55,7 @@ AnalyzeTable <- function(ahpTree,
   
   
   myFormatters[[colnames(df)[3]]] <- ColorTileWithFormatting("white", weightColor, percent1)
-  myFormatters$Consistency <- ConsistencyFormatter("white", consistencyColor, percent1)
+  myFormatters$Inconsistency <- ConsistencyFormatter("white", consistencyColor, percent1)
   myFormatters$` ` <- formatter("span", 
                                 style = style(`white-space` = "nowrap",
                                               `text-align` = "left",
