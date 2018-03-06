@@ -4,7 +4,7 @@
 
 <head>
 
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
@@ -12,7 +12,7 @@
 
 <meta name="author" content="Christoph Glur" />
 
-<meta name="date" content="2016-11-27" />
+<meta name="date" content="2018-03-06" />
 
 <title>AHP Examples</title>
 
@@ -70,7 +70,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1 class="title toc-ignore">AHP Examples</h1>
 <h4 class="author"><em>Christoph Glur</em></h4>
-<h4 class="date"><em>2016-11-27</em></h4>
+<h4 class="date"><em>2018-03-06</em></h4>
 
 
 <div id="TOC">
@@ -586,17 +586,17 @@ carAhp &lt;-<span class="st"> </span><span class="kw">Load</span>(ahpFile)</code
 <h3>Analyze</h3>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">Analyze</span>(carAhp)</code></pre></div>
 <pre><code>##                               Weight Odyssey Accord Sedan  CR-V Element Accord Hybrid Pilot Inconsistency
-## 1  Buy Car                    100.0%   22.0%        21.0% 16.3%   15.1%         14.1% 11.5%          7.4%
+## 1  Buy Car                    100.0%   22.0%        21.0% 16.3%   15.1%         14.1% 11.5%          7.5%
 ## 2   ¦--Cost                    51.0%    5.9%        11.7% 11.7%   12.9%          4.8%  4.0%          1.5%
 ## 3   ¦   ¦--Purchase Price      24.9%    2.3%         6.1%  6.1%    9.1%          0.6%  0.6%          6.8%
 ## 4   ¦   ¦--Fuel Cost           12.8%    2.2%         1.9%  2.1%    2.3%          1.7%  2.6%          0.0%
 ## 5   ¦   ¦--Resale Value         8.2%    1.1%         1.9%  2.9%    1.1%          0.9%  0.3%          3.2%
 ## 6   ¦   °--Maintenance Cost     5.1%    0.3%         1.8%  0.5%    0.4%          1.6%  0.4%          2.3%
-## 7   ¦--Safety                  23.4%   10.2%         5.1%  0.8%    0.5%          5.1%  1.8%          8.1%
+## 7   ¦--Safety                  23.4%   10.2%         5.1%  0.8%    0.5%          5.1%  1.8%          8.0%
 ## 8   ¦--Capacity                21.5%    5.7%         2.8%  3.1%    1.5%          2.8%  5.6%          0.0%
 ## 9   ¦   ¦--Passenger Capacity  17.9%    4.9%         2.4%  2.4%    0.8%          2.4%  4.9%          0.0%
 ## 10  ¦   °--Cargo Capacity       3.6%    0.8%         0.3%  0.7%    0.7%          0.3%  0.7%          0.4%
-## 11  °--Style                    4.1%    0.3%         1.5%  0.6%    0.1%          1.5%  0.2%         10.2%</code></pre>
+## 11  °--Style                    4.1%    0.3%         1.5%  0.6%    0.1%          1.5%  0.2%         10.1%</code></pre>
 <p>Note that, thanks to the <code>formattable</code> package, the columns are <code>numerics</code>, even though they are formatted as percentages.</p>
 <p>Another way to display the AHP analysis is with the <code>ShowTable</code> function, which displays an html table with color codings to help interpret the numbers:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">AnalyzeTable</span>(carAhp)</code></pre></div>
@@ -658,7 +658,7 @@ Inconsistency
 <span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #c2bac2">11.5%</span>
 </td>
 <td style="text-align:right;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #f2e2c3"> <i class></i> 7.4% </span>
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #f2e1c1"> <i class></i> 7.5% </span>
 </td>
 </tr>
 <tr>
@@ -687,7 +687,7 @@ Inconsistency
 <span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #eae7ea">4.0%</span>
 </td>
 <td style="text-align:right;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #fcf9f2"> <i class></i> 1.5% </span>
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #fcf8f2"> <i class></i> 1.5% </span>
 </td>
 </tr>
 <tr>
@@ -716,7 +716,7 @@ Inconsistency
 <span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #fbfbfb">0.6%</span>
 </td>
 <td style="text-align:right;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #f3e4c7"> <i class></i> 6.8% </span>
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #f3e4c8"> <i class></i> 6.8% </span>
 </td>
 </tr>
 <tr>
@@ -832,7 +832,7 @@ Inconsistency
 <span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #f5f4f5">1.8%</span>
 </td>
 <td style="text-align:right;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #f1dfbd"> <i class></i> 8.1% </span>
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #f1dfbd"> <i class></i> 8.0% </span>
 </td>
 </tr>
 <tr>
@@ -948,7 +948,7 @@ Inconsistency
 <span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #fefefe">0.2%</span>
 </td>
 <td style="text-align:right;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #eed8ae"> <i class="glyphicon glyphicon-exclamation-sign"></i> 10.2% </span>
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #eed8ae"> <i class="glyphicon glyphicon-exclamation-sign"></i> 10.1% </span>
 </td>
 </tr>
 </tbody>
@@ -1019,7 +1019,7 @@ Inconsistency
 <span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #00ff00"></span>
 </td>
 <td style="text-align:right;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ff1616"> <i class></i> 7.4% </span>
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ff0f0f"> <i class></i> 7.5% </span>
 </td>
 </tr>
 <tr>
@@ -1048,7 +1048,7 @@ Inconsistency
 <span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #00ff00"></span>
 </td>
 <td style="text-align:right;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ffcfcf"> <i class></i> 1.5% </span>
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ffcece"> <i class></i> 1.5% </span>
 </td>
 </tr>
 <tr>
@@ -1193,7 +1193,7 @@ Inconsistency
 <span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #00ff00">43.4%</span>
 </td>
 <td style="text-align:right;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ff0000"> <i class></i> 8.1% </span>
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ff0000"> <i class></i> 8.0% </span>
 </td>
 </tr>
 <tr>
@@ -1446,7 +1446,7 @@ Inconsistency
 <span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #958795">47.6%</span>
 </td>
 <td style="text-align:right;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #eed8ae"> <i class></i> 6.1% </span>
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #eed8ae"> <i class></i> 6.8% </span>
 </td>
 </tr>
 <tr>
@@ -1541,7 +1541,7 @@ Inconsistency
 <span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #c9c2c9">31.4%</span>
 </td>
 <td style="text-align:right;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #eed8ae"> <i class></i> 3.2% </span>
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #eed8ae"> <i class></i> 3.5% </span>
 </td>
 </tr>
 <tr>
@@ -1635,7 +1635,7 @@ Inconsistency
 <span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #dfdbdf">21.3%</span>
 </td>
 <td style="text-align:right;">
-<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #eed8ae"> <i class></i> 6.1% </span>
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #eed8ae"> <i class></i> 6.8% </span>
 </td>
 </tr>
 <tr>
@@ -1796,7 +1796,7 @@ Inconsistency
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
